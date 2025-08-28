@@ -11,7 +11,7 @@
 ============================================
 
 Общая информация:
-ID Билета (JIRA/TFS/etc.): "https://begy.atlassian.net/jira/software/projects/BEG/issues/?jql=project%20%3D%20%22BEG%22%20ORDER%20BY%20status%20ASC%2C%20created%20DESC&selectedIssue=BEG-255"
+ID Билета (JIRA/TFS/etc.): "https://begy.atlassian.net/browse/BEG-255?atlOrigin=eyJpIjoiZmQ2Mjc5MjUwMDI3NDJlZmJiNWUwZmQ5NjE3ZTUwMDYiLCJwIjoiaiJ9"
 Браузер/ОС/Устройство: [Windows 11]
 Критичность: [Medium]
 
