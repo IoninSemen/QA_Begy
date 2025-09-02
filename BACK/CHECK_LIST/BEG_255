@@ -4,7 +4,7 @@
 
 Базовый URL: https://api-test.begy.app
 Тестовые данные:
-- validUserId = 123 (существующий)
+- validUserId = 44 (существующий)
 - validRequestId = 456 (существующий)
 - invalidId = 999999 (несуществующий)
 Ссылка (POSTMAN) коллекция: "https://semenionin.postman.co/workspace/Semen-Ionin's-Workspace~3d38c569-1360-48c7-823a-d38f6d2bca12/collection/44591944-b692c36e-3200-47a5-beea-3310f7c88bc9?action=share&source=copy-link&creator=44591944"
