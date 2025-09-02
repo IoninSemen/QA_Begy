@@ -1,0 +1,49 @@
+ЧЕК-ЛИСТ ДЛЯ ТЕСТИРОВАНИЯ API
+============================================
+Дата: [24.06.2025] | Тестировщик: [Ионин Семен]
+
+Базовый URL: https://api-test.begy.app
+Тестовые данные:
+- validUserId = 44 (существующий)
+- invalidId = 999999 (несуществующий)
+Ссылка (POSTMAN) коллекция: "https://semenionin.postman.co/workspace/Semen-Ionin's-Workspace~3d38c569-1360-48c7-823a-d38f6d2bca12/request/44591944-19ffa917-5c0b-4f13-b84b-64abf1a04aa8?action=share&source=copy-link&creator=44591944"
+============================================
+
+Общая информация:
+ID Билета (JIRA/TFS/etc.): "https://begy.atlassian.net/browse/BEG-254?atlOrigin=eyJpIjoiMDE3Yzk4ODdkNjM4NDcyYzg3MTk4NmEzMzY0OTUwMWMiLCJwIjoiaiJ9"
+Браузер/ОС/Устройство: [Windows 11]
+Критичность: [Medium]
+
+1. PATCH /user-requests
+============================
+[V] 200 OK - успешное обновление
+[V] Тело ответа - содержит обновленный объект
+[X] Частичное обновление - обновляются только переданные поля
+    -> Данный endpoint, меняет одно поле
+[V] updatedAt - поле обновляется автоматически
+
+[V] 404 Not Found - несуществующий ID
+[V] 400 Bad Request - невалидные данные для обновления
+[V] 401 Unauthorized - запрос без авторизации
+
+Тестовые тела для PATCH:
+- {"roles": "admin"}
+- {"roles": "ad"}
+
+Тестовые ID:
+- 44 (валидный)
+- 999999 (несуществующий)
+- -1 (невалидный)
+- "abc" (невалидный)
+
+СТАТУСЫ ОТВЕТОВ
+================
+[V] 200 - OK
+[V] 201 - Created
+[V] 400 - Bad Request
+[V] 401 - Unauthorized
+[X] 403 - Forbidden
+[V] 404 - Not Found
+[X] 409 - Conflict
+[X] 422 - Unprocessable Entity
+[X] 500 - Internal Server Error
