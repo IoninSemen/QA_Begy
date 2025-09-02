@@ -14,7 +14,7 @@ ID Билета (JIRA/TFS/etc.): "https://begy.atlassian.net/browse/BEG-254?atlO
 Браузер/ОС/Устройство: [Windows 11]
 Критичность: [Medium]
 
-1. PATCH /user-requests
+1. PATCH /back/users/{userId}
 ============================
 [V] 200 OK - успешное обновление
 [V] Тело ответа - содержит обновленный объект
@@ -39,7 +39,7 @@ ID Билета (JIRA/TFS/etc.): "https://begy.atlassian.net/browse/BEG-254?atlO
 СТАТУСЫ ОТВЕТОВ
 ================
 [V] 200 - OK
-[V] 201 - Created
+[X] 201 - Created
 [V] 400 - Bad Request
 [V] 401 - Unauthorized
 [X] 403 - Forbidden
